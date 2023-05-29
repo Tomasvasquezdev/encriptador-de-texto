@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="funciones.js">
+    <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+    <title>Encriptador</title>
+</head>
+    <header>
+       <a href="https://github.com/Tomasvasquezdev"><img class="github" src="Imagenes/github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/tomasvasquezdev/"><img class="linkedin" src="Imagenes/linkedin.png" alt=""></a>
+    </header>
+<body>
+    <section>
+        <div>
+           <textarea class="area-txt" id="area-txt" placeholder="Ingrese su texto aquí.."></textarea> 
+        </div>
+        <div class="tyc">
+            <p> &#128712 Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+            <input class="boton-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+            <input class="boton-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+        </div>
+    </section>
+    <section>
+        <div class="rectangulo">
+            <img class="muñeco" id="muñeco" src="Imagenes/Muñeco.png">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="ningun-msj">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingrese el texto que desee encriptar o desencriptar</p>
+                <!-- <textarea class="mensaje"></textarea>-->
+            </div>
+        </div>
+    </section>
+    <script src="funciones.js"></script>
+</body>
+</html>
